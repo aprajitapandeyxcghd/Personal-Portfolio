@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  :root {
+    --background-color: white;
+    --text-color: black;
+    --navbar-color: purple;
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #1a1a2e;
+    --text-color: #fff;
+    --navbar-color: #5338c4;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar-color);
+    padding: 1rem;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .theme-toggle {
+    color: white;
+  }
+  
+  .theme-toggle label {
+    margin-left: 10px;
+  }
+  
+  /* Home Section */
+  .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    color: var(--navbar-color);
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+  }
+  
+  .links a {
+    margin-right: 20px;
+    color: var(--navbar-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .home-image img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 50px;
+  }
+  
+  .projects-section h2 {
+    color: var(--navbar-color);
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: var(--navbar-color);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  /* Education & Extracurricular Sections */
+  .education-section, .extracurricular-section {
+    padding: 50px;
+  }
+  
+  h2 {
+    color: var(--navbar-color);
+  }
+  
+  .extracurricular-card {
+    background-color: var(--navbar-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
